@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Annual Report for <%= name %></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="top">
+      <h1>Annual Report for <%= name %></h1>
+    </div>
+    <div class="rides">
+      <p>You took <%= ridesTripCount %> rides with Uber in 2020, <mark><%= poolTripsCount %></mark> are Uber Pools</p>
+      <p>With Uber you have been to <%= cities.length %> cities, <%= cities %></p>
+    </div>
+    <div class="eats">
+      <p>You made <%= eatsTripCount %> eats orders on UberEats in 2020. Your favourite cusine is <%= favCusine %></p>
+      <p>And you gave thumb ups to couries in <%= thumbUpCount %> eats orders!</p>
+    </div>
+  </div>
+
+</body>
+</html>
