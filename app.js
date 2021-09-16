@@ -6,7 +6,9 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static('node_modules/ejs'));
 
 app.get("/annualReport", (req, res) => {
   // http://localhost:3001/annualReport?name=You%20Xu&eatsTripCount=10&ridesTripCount=20&poolTripsCount=4&favCusine=Japanese&cities=["NY","SF"]&thumbUpCount=13
@@ -18,6 +20,7 @@ app.get("/annualReport", (req, res) => {
   // cities=["aa","bb"]
   var cities = JSON.parse(req.query.cities);
   var thumbUpCount = req.query.thumbUpCount;
+
   var data = {
     "name": name,
     "eatsTripCount": eatsTripCount,
@@ -26,7 +29,8 @@ app.get("/annualReport", (req, res) => {
     "favCusine": favCusine,
     "cities": cities,
     "thumbUpCount": thumbUpCount
-  }
+  };
+
   console.log(__dirname + '/views/index.ejs');
   ejs.renderFile(__dirname + '/views/index.ejs', data, function(err, data) {
     if (err) {

@@ -12,6 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "cassandra-driver": "^4.6.3",
-    "ejs": "^3.1.6"
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.1.6",
+    "express-session": "^1.17.2",
+    "jquery": "^3.6.0"
   }
 }
