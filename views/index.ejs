@@ -10,23 +10,21 @@
   <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
       <h1>Annual Report for <%= name %></h1>
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
       <div class="rides">
-        <p>You took <%= ridesTripCount %> rides with Uber in 2020, <mark><%= poolTripsCount %></mark> are Uber Pools</p>
-        <p>With Uber you have been to <%= cities.length %> cities, <%= cities %></p>
+        <p class="lefteasein ridesText">You took <%= ridesTripCount %> rides with Uber in 2020, <mark><%= poolTripsCount %></mark> are Uber Pools</p>
+        <p class="righteasein ridesText2">With Uber you have been to <%= cities.length %> cities: <%= cities %></p>
+        <img class="scale ridesImg" src="img/test.png" />
       </div>
     </div>
     
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
       <div class="eats">
-        <p>You made <%= eatsTripCount %> eats orders on UberEats in 2020. Your favourite cusine is <%= favCusine %></p>
-        <p>And you gave thumb ups to couries in <%= thumbUpCount %> eats orders!</p>
+        <p class="lefteasein">You made <%= eatsTripCount %> eats orders on UberEats in 2020. Your favourite cusine is <%= favCusine %></p>
+        <p class="righteasein">And you gave thumb ups to couries in <%= thumbUpCount %> eats orders!</p>
     </div>
     </div>
     
