@@ -100,11 +100,10 @@ mark {
 .righteasein {
     -webkit-animation-name: righteaseinAnimate;
     -webkit-animation-duration: 1.5s;
-    -webkit-animation-delay: 2s;
     animation-name: righteaseinAnimate;
     animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
+    /* animation-delay: 1s;
+    animation-fill-mode: both; */
 }
 
 .scale {
@@ -159,17 +158,18 @@ mark {
 }
 
 .ridesText3 {
-    padding-top: 20px;
+    padding-top: 75%;
     padding-left: 10%;
     padding-right: 10%;
     font-weight: 100;
     color: #6f3943;
+    font-size: x-large;
 }
 
 .ridesImg {
     width: 50%;
     position: absolute;
-    bottom:0;
+    bottom: 9%;
     left: 7%;
 }
 
@@ -215,6 +215,161 @@ mark {
     height: 731px;
     position: absolute;
     z-index: -1;
+}
+
+.rides3Text {
+    position: absolute;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 73%;
+    padding-right: 10%;
+    padding-left: 40%;
+    font-size: x-large;
+    font-weight: 500;
+    line-height: 160%;
+    color: #24296D;
+}
+
+
+.rides3mark {
+    background-color: transparent;
+    font-size: xx-large;
+    color: #e0a228;
+}
+
+.road2righteasein {
+    -webkit-animation-name: righteaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0.6s;
+    animation-name: righteaseinAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
+.road3righteasein {
+    -webkit-animation-name: righteaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 1.2s;
+    animation-name: righteaseinAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+}
+
+.eats3Text {
+    position: absolute;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 18%;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: x-large;
+    font-weight: 500;
+    line-height: 170%;
+    color: #41555F;
+}
+
+.eats3mark {
+    background-color: transparent;
+    font-size: xx-large;
+    color: #ed956e;
+}
+
+.eats1Text {
+    position: absolute;
+    /* text-align: center; */
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 43%;
+    padding-right: 20%;
+    padding-left: 10%;
+    font-size: larger;
+    font-weight: 500;
+    line-height: 140%;
+    color: black;
+}
+
+.eats1Text2 {
+    position: absolute;
+    /* text-align: center; */
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 60%;
+    padding-right: 20%;
+    padding-left: 10%;
+    font-size: larger;
+    font-weight: 500;
+    line-height: 140%;
+    color: black;
+}
+
+.eats1lefteasein {
+    -webkit-animation-name: lefteaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0.4s;
+    animation-name: lefteaseinAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
+}
+
+.eats1righteasein {
+    -webkit-animation-name: righteaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0.6s;
+    animation-name: righteaseinAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
+.eats2lefteasein {
+    -webkit-animation-name: lefteaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 1s;
+    animation-name: lefteaseinAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.eats2righteasein {
+    -webkit-animation-name: righteaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 1.4s;
+    animation-name: righteaseinAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 1.4s;
+    animation-fill-mode: both;
+}
+
+.eats2mark {
+    background-color: transparent;
+    font-size: x-large;
+    color: #84acefeb;
+}
+
+.eats2Text {
+    position: absolute;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    padding-bottom: 10%;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: larger;
+    font-weight: 500;
+    line-height: 140%;
+    color: #1c246ef0;
+    top: 83%;
+    z-index: 3;
+}
+
+.eats2bottomeasein {
+    -webkit-animation-name: bottomeaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 1.9s;
+    animation-name: bottomeaseinAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 1.9s;
+    animation-fill-mode: both;
 }
 
 /* .plantImg {
