@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" charset="UTF-8">
   <title>Annual Report for <%= name %></title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bowlby+One+SC" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,9 +16,11 @@
     
     <div class="mySlides fade">
       <div class="rides">
-        <p class="lefteasein ridesText">You took <%= ridesTripCount %> rides with Uber in 2020, <mark><%= poolTripsCount %></mark> are Uber Pools</p>
-        <p class="righteasein ridesText2">With Uber you have been to <%= cities.length %> cities: <%= cities %></p>
-        <img class="scale ridesImg" src="img/test.png" />
+        <p class="lefteasein ridesText">You took <mark><%= ridesTripCount %></mark> rides with Uber in 2020 </p>
+        <p class="lefteasein ridesText2"> <mark><%= poolTripsCount %></mark> using Uber Pool!</p>
+        <p class="righteasein ridesText3">With Uber you have been to <mark><%= cities.length %></mark> cities</p>
+        <p class="righteasein ridesText2"><mark><%= cities %></mark></p>
+        <img class="scale ridesImg" src="img/ridescar.png" />
       </div>
     </div>
     
