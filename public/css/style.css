@@ -83,6 +83,12 @@ mark {
     animation-name: topeaseinAnimate;
     animation-duration: 1.5s;
 }
+.bottomeasein {
+    -webkit-animation-name: bottomeaseinAnimate;
+    -webkit-animation-duration: 1.5s;
+    animation-name: bottomeaseinAnimate;
+    animation-duration: 1.5s;
+}
 
 .lefteasein {
     -webkit-animation-name: lefteaseinAnimate;
@@ -109,6 +115,25 @@ mark {
     animation-delay: 1s;
     animation-fill-mode: both;
 }
+
+.plantFade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+/* .repeatScale {
+    -webkit-animation-name: repeatScaleAnimate;
+    -webkit-animation-duration: 1.5s;
+    animation-name: repeatScaleAnimate;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+} */
 
 .rides {
     background-image: url("../img/ridesbg.png");
@@ -144,17 +169,65 @@ mark {
 .ridesImg {
     width: 50%;
     position: absolute;
-    bottom:8%;
+    bottom:0;
     left: 7%;
 }
 
+.plants {
+    width: 411px;
+    height: 731px;
+    position: absolute;
+}
+
+.plants2 {
+    width: 411px;
+    height: 731px;
+    position: absolute;
+}
+
+.tree {
+    width: 411px;
+    height: 731px;
+    position: absolute;
+    z-index: 0;
+}
+
+.rides2Text {
+    position: absolute;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 73%;
+    padding-right: 40%;
+    padding-left: 11%;
+    font-size: x-large;
+    font-weight: 500;
+    line-height: 160%;
+    color: #41555F;
+}
+
+.rides2mark {
+    background-color: transparent;
+    font-size: x-large;
+    color: #2B7B2F;
+}
+
+.rides2bg {
+    width: 411px;
+    height: 731px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* .plantImg {
+    width: 33%;
+} */
+
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: 0} 
   to {opacity: 1}
 }
 
@@ -170,6 +243,16 @@ mark {
 
 @-webkit-keyframes topeaseinAnimate{
     0% {transform: translateY(-500px); opacity: 0.4;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes bottomeaseinAnimate{
+    0% {transform: translateY(500px); opacity: 0.4;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+@-webkit-keyframes bottomeaseinAnimate{
+    0% {transform: translateY(500px); opacity: 0.4;}
     100% {transform: translateY(0px); opacity: 1;}
 }
 
@@ -199,6 +282,16 @@ mark {
 }
 
 @-webkit-keyframes scaleAnimate{
-    0% {transform: scale(0.3); opacity: 0.4;}
+    0% {transform: scale(0.3); opacity: 0;}
     100% {opacity: 1;}
 }
+
+/* @keyframes repeatScaleAnimate{
+    0% {transform: scale(0.8); opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes repeatScaleAnimate{
+    0% {transform: scale(0.8); opacity: 0;}
+    100% {opacity: 1;}
+} */

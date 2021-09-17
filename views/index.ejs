@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" charset="UTF-8">
   <title>Annual Report for <%= name %></title>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bowlby+One+SC" />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +12,8 @@
   <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <h1>Annual Report for <%= name %></h1>
+      <p class="topeasein" style="text-align: center;">Hi <%= name %>!</p>
+      <p class="topeasein" style="text-align: center;">Ready to check yout annual report?</p>
     </div>
     
     <div class="mySlides fade">
@@ -25,10 +27,31 @@
     </div>
     
     <div class="mySlides fade">
-      <div class="eats">
-        <p class="lefteasein">You made <%= eatsTripCount %> eats orders on UberEats in 2020. Your favourite cusine is <%= favCusine %></p>
-        <p class="righteasein">And you gave thumb ups to couries in <%= thumbUpCount %> eats orders!</p>
+      <div class="rides2">
+        <p class="lefteasein rides2Text">Thank you for saving carbon emission for <mark class="rides2mark">9</mark> kg by taking <mark class="rides2mark"><%= poolTripsCount %></mark> trips with Uber Pool &hearts;</p>
+        <img class="rides2bg" src="img/rides2bg.png" />
+        <img class="plantFade tree" src="img/tree.png" />
+        <img class="plants bottomeasein" src="img/plants.png" />
+        <img class="plantFade plants2" src="img/plant2.png" />
+      </div>
     </div>
+
+    <div class="mySlides fade">
+      <div class="eats1">
+        <p class="lefteasein">You made <mark><%= eatsTripCount %></mark> eats orders on Uber Eats in 2020</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="eats2">
+        <p class="lefteasein">Your favourite cusine is <mark><%= favCusine %></mark></p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="eats3">
+        <p class="righteasein">And you gave thumb ups to couries in <mark><%= thumbUpCount %></mark> eats orders!</p>
+      </div>
     </div>
     
   </div>
