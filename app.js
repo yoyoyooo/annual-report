@@ -40,6 +40,36 @@ app.get("/annualReport", (req, res) => {
     }
   });
 });
+
+app.get("/badges", (req, res) => {
+  // http://localhost:3001/badges?name=You%20Xu&ridesTripCount=100&eatsTripCount=200&anniversary=5&rideCities=["NY","SF"]&eatsFavorites=["japanese food lover","chinese food lover"]&stars=5
+  var name = req.query.name;
+  var ridesTripCount = req.query.ridesTripCount;
+  var eatsTripCount = req.query.eatsTripCount;
+  var anniversary = req.query.anniversary;
+  var rideCities = JSON.parse(req.query.rideCities);
+  var eatsFavorites = JSON.parse(req.query.eatsFavorites);
+  var stars = req.query.stars;
+
+  var data = {
+    "name": name,
+    "ridesTripCount": ridesTripCount,
+    "eatsTripCount": eatsTripCount,
+    "anniversary": anniversary,
+    "rideCities": rideCities,
+    "eatsFavorites": eatsFavorites,
+    "stars": stars
+  };
+
+  console.log(__dirname + '/views/badges.ejs');
+  ejs.renderFile(__dirname + '/views/badges.ejs', data, function(err, data) {
+    if (err) {
+      console.log(err);
+    } else{
+      res.send(data);
+    }
+  });
+});
   
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);

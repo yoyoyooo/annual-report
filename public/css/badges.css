@@ -1,0 +1,176 @@
+/* For Badges*/
+/* Slideshow container */
+.body-container {
+    /* background-image:url("../badge_images/badges/mega-creator-34.png"); */
+    background-size: 411px 731px;
+    background-color: #f2f2f273
+}
+
+/* For Badges*/
+/* Slideshow container */
+.badges-container {
+    max-width: 1000px;
+    position: fixed;
+    /*margin: auto;*/
+    height: 90%;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /*margin-left: 10px;*/
+    /*margin-top: 10px;*/
+    /* margin-bottom: 20px; */
+    background-image:url("../badge_images/badges/mega-creator-34.png");
+    background-size: 411px 731px;
+}
+
+/* Hide scrollbar in Chrome for badges-container */
+.badges-container::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+/* Badge image */
+img.u-image {
+    width: 90px;
+    height: 90px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+/* Badge image */
+img.v-image {
+    width: 90px;
+    height: 100px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* Badge image */
+img.w-image {
+    width: 105px;
+    height: 105px;
+    overflow: hidden;
+} 
+
+/* Badge image*/
+.u-image {
+    color: #111111;
+}
+
+/* Badge header text */
+.badges-header-text {
+    font-size: 34px;
+    margin-left: 130px;
+    padding:8px;
+    /* text-shadow: 0 0 0.2em #727a71; */
+    font-family: "Uber Move", "Bowlby One SC", "lucida grande", Verdana, sans-serif;
+    color: #3c3c3c
+}
+
+/* Badge header text */
+.badges-title-text {
+    margin-top:4px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Uber Move', Verdana, sans-serif;
+    color: #504f4f
+}
+
+/* Badge header text */
+.badges-subtitle-text {
+    font-size: 16px;
+    font-weight: bold;
+/*     font-style: italic; */
+    margin-left: 2px;
+    margin-top: 8px;
+    font-family: 'Uber Move', Verdana, sans-serif;
+    color: #777777
+}
+
+/* Row */
+.row {
+    /*margin-top: 10px;*/
+    margin-left: 10px;
+    width: 100%;
+}
+
+/* Container wrap for the badge page */
+.container-wrap {
+    width: 100%;
+    height: 110px;
+    /*background-color: rgba(0,0,0,0.8);*/
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: scroll; /* 1 */
+    text-align: justify; /* 3 */
+    padding:8px;
+}
+
+/* Hide scrollbar in Chrome */
+.container-wrap::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+/* user_overview_container for the badge page */
+.user_overview_container {
+    width: 100%;
+}
+
+.user_overview_container > div {
+    display: inline-block;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+}
+
+/* rides_container for the badge page */
+.rides_container {
+    width: 105%;
+}
+
+.rides_container > div {
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* eats_container for the badge page */
+.eats_container {
+    width: 105%;
+}
+
+.eats_container > div {
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* cities_container for the badge page */
+.cities_container {
+    width: 130%;
+}
+
+.cities_container > div {
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* foods_container for the badge page */
+.foods_container {
+    width: 144%;
+}
+
+.foods_container > div {
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* badges layout for the badge page */
+.badges-layout {
+    width: 100px;
+}
