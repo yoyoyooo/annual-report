@@ -71,6 +71,8 @@ img.w-image {
     /* margin: 0 70px; */
     width: 100%;
     text-align: center;
+    background-color: black;
+    color: #ffffffe6;
 }
 
 /* Badge header text */
