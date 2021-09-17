@@ -11,16 +11,17 @@
 .badges-container {
     max-width: 1000px;
     position: fixed;
-    /*margin: auto;*/
-    height: 90%;
+    /* margin: auto; */
+    height: 92%;
     background-color: #ffffff;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    /*margin-left: 10px;*/
-    /*margin-top: 10px;*/
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
     /* margin-bottom: 20px; */
-    background-image:url("../badge_images/badges/mega-creator-34.png");
+    background-image: url(../badge_images/badges/mega-creator-34.png);
     background-size: 411px 731px;
+    bottom: 0;
 }
 
 /* Hide scrollbar in Chrome for badges-container */
@@ -59,11 +60,17 @@ img.w-image {
 /* Badge header text */
 .badges-header-text {
     font-size: 34px;
-    margin-left: 130px;
-    padding:8px;
+    padding-top: 8px;
     /* text-shadow: 0 0 0.2em #727a71; */
     font-family: "Uber Move", "Bowlby One SC", "lucida grande", Verdana, sans-serif;
-    color: #3c3c3c
+    color: #3c3c3c;
+    /* font-weight: bold; */
+    position: fixed;
+    height: 8%;
+    /* text-align: center; */
+    /* margin: 0 70px; */
+    width: 100%;
+    text-align: center;
 }
 
 /* Badge header text */
