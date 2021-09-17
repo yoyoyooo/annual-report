@@ -124,15 +124,15 @@ mark {
     animation-fill-mode: both;
 }
 
-/* .repeatScale {
-    -webkit-animation-name: repeatScaleAnimate;
-    -webkit-animation-duration: 1.5s;
-    animation-name: repeatScaleAnimate;
-    animation-duration: 1.5s;
-    animation-delay: 2.5s;
-    animation-fill-mode: both;
+.repeatFade {
+    -webkit-animation-name: fade2;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade2;
+    animation-duration: 2.5s;
+    /* animation-delay: 2.5s;
+    animation-fill-mode: both; */
     animation-iteration-count:infinite;
-} */
+}
 
 .rides {
     background-image: url("../img/ridesbg.png");
@@ -341,6 +341,13 @@ mark {
     animation-fill-mode: both;
 }
 
+.scaleBig {
+    -webkit-animation-name: scaleBigAnimate;
+    -webkit-animation-duration: 1.8s;
+    animation-name: scaleBigAnimate;
+    animation-duration: 1.8s; 
+}
+
 .eats2mark {
     background-color: transparent;
     font-size: x-large;
@@ -372,6 +379,49 @@ mark {
     animation-fill-mode: both;
 }
 
+.indexText1 {
+    position: absolute;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    margin-top: 104%;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: x-large;
+    font-weight: 900;
+    line-height: 110%;
+    color: #394e58;
+}
+
+.indexText2 {
+    position: absolute;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    padding-top: 160%;
+    /* padding-right: 20%; */
+    /* padding-left: 20%; */
+    font-size: 20px;
+    font-weight: 100;
+    /* line-height: 140%; */
+    color: #ffffffde;
+    height: -webkit-fill-available;
+    width: 100%;
+}
+
+.uber {
+    position: absolute;
+    height: 181px;
+    width: 181px;
+    margin-left: 115px;
+    margin-top: 98px;
+}
+
+.spin {
+    animation: spin 10s steps(150) infinite;
+}
+@keyframes spin {
+    from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+}
 /* .plantImg {
     width: 33%;
 } */
@@ -384,6 +434,16 @@ mark {
 @keyframes fade {
   from {opacity: 0} 
   to {opacity: 1}
+}
+
+@-webkit-keyframes fade2 {
+    from {opacity: 0.1} 
+    to {opacity: 1}
+}
+  
+@keyframes fade2 {
+    from {opacity: 0.1} 
+    to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
@@ -441,12 +501,24 @@ mark {
     100% {opacity: 1;}
 }
 
+@keyframes scaleBigAnimate{
+    0% {transform: scale(0.3); opacity: 0;}
+    80% {transform: scale(1.5); opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes scaleBigAnimate{
+    0% {transform: scale(0.3); opacity: 0;}
+    80% {transform: scale(1.5); opacity: 1;}
+    100% {opacity: 1;}
+}
+
 /* @keyframes repeatScaleAnimate{
-    0% {transform: scale(0.8); opacity: 0;}
+    0% {opacity: 0;}
     100% {opacity: 1;}
 }
 
 @-webkit-keyframes repeatScaleAnimate{
-    0% {transform: scale(0.8); opacity: 0;}
+    0% {opacity: 0;}
     100% {opacity: 1;}
 } */
