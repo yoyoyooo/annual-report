@@ -1,12 +1,16 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Bowlby One SC", "lucida grande", Verdana, sans-serif; 
     margin:0;
     overflow: hidden;
+    border: 0;
+    padding: 0;
 }
 
 a:focus {
@@ -20,6 +24,9 @@ a:focus {
 
 img {
     vertical-align: middle;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 mark {
@@ -127,6 +134,15 @@ mark {
     animation-fill-mode: both;
 }
 
+.starFade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+}
+
 .repeatFade {
     -webkit-animation-name: fade2;
     -webkit-animation-duration: 2.5s;
@@ -153,6 +169,7 @@ mark {
 
 
 .ridesText2 {
+    font-family: 'Abril Fatface', cursive;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 3px;
@@ -161,6 +178,7 @@ mark {
 }
 
 .ridesText3 {
+    font-family: 'Abril Fatface', cursive;
     padding-top: 75%;
     padding-left: 10%;
     padding-right: 10%;
